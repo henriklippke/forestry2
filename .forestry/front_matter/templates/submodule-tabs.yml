@@ -1,4 +1,47 @@
 ---
 label: submodule-tabs
 hide_body: true
-fields: []
+fields:
+- name: headline
+  type: text
+  config:
+    required: false
+  label: Headline
+- name: body
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Body
+- name: block
+  type: blocks
+  label: Block
+  template_types: []
+  config:
+    min: 
+    max: 
+- name: tab
+  type: field_group_list
+  fields:
+  - name: headline
+    type: text
+    config:
+      required: false
+    label: headline
+  - name: body
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: body
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Tab
