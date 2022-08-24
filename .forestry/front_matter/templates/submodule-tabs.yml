@@ -45,3 +45,5 @@ fields:
     max: 
     labelField: 
   label: Tab
+pages:
+- docs/Submodule1.md
